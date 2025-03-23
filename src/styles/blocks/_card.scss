@@ -11,10 +11,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @include hover(transform, scale(1.2));
+  transition: transform $transition-duration;
 
   &:hover {
+    transform: scale(1.2);
+
     #{$card}__title {
       color: $card-active-color;
     }

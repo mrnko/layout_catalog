@@ -9,15 +9,15 @@
     padding: 50px 128px;
   }
 
-  @include mq-sm {
+  @media (min-width: $sm) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include mq-md {
+  @media (min-width: $md) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include mq-lg {
+  @media (min-width: $lg) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
